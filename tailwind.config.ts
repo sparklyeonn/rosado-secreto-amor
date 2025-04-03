@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,20 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+        diary: {
+          50: '#fdf2f5',
+          100: '#fce7ed',
+          200: '#fad0dc',
+          300: '#f7aabe',
+          400: '#f27693',
+          500: '#eb506f',
+          600: '#d62a4b',
+          700: '#b31e3b',
+          800: '#961c35',
+          900: '#7d1c32',
+          950: '#460c19',
+        }
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,12 +98,38 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+        'page-flip': {
+          '0%': { 
+            transform: 'rotateY(0deg)',
+            opacity: '0' 
+          },
+          '100%': { 
+            transform: 'rotateY(180deg)',
+            opacity: '1' 
+          }
+        },
+        'fade-in': {
+          '0%': { 
+            opacity: '0',
+            transform: 'translateY(10px)' 
+          },
+          '100%': { 
+            opacity: '1',
+            transform: 'translateY(0)' 
+          }
+        }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+        'page-flip': 'page-flip 0.6s ease-out forwards',
+        'fade-in': 'fade-in 0.5s ease-out'
+			},
+      backgroundImage: {
+        'diary-pattern': "url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgdmlld0JveD0iMCAwIDYwIDYwIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmY2U3ZWQiIGZpbGwtb3BhY2l0eT0iMC40Ij48cGF0aCBkPSJNMzYgMzRjMCAxLjEtLjkgMi0yIDJzLTItLjktMi0yIC45LTIgMi0yIDIgLjkgMiAyeiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTYgLTYpIi8+PC9nPjwvZz48L3N2Zz4=')",
+        'diary-gradient': 'linear-gradient(to bottom right, #fce7ed, #fff5f8)'
+      }
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
