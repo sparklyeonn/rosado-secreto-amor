@@ -30,7 +30,7 @@ const DiaryHeader = () => {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <h1 className="hidden sm:block text-2xl font-bold text-diary-700">
-            Mi Diario Secreto
+            Secret Diary
           </h1>
           <div className="md:hidden">
             <Sheet>
@@ -42,7 +42,7 @@ const DiaryHeader = () => {
               <SheetContent side="left" className="diary-cover border-r-0">
                 <div className="flex flex-col h-full">
                   <h2 className="text-2xl font-bold text-diary-700 mb-6">
-                    Mi Diario Secreto
+                    Secret Diary
                   </h2>
                   <nav className="flex flex-col gap-4">
                     <SheetClose asChild>

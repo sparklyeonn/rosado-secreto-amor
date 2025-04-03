@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { LockIcon, MailIcon, LogInIcon, UserPlusIcon } from 'lucide-react';
@@ -20,14 +19,11 @@ const AuthForm = () => {
   const [loginData, setLoginData] = useState({ email: '', password: '' });
   const [registerData, setRegisterData] = useState({ email: '', password: '', confirmPassword: '' });
 
-  // Mock authentication logic (would connect to a backend in a real app)
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
 
-    // Mock login logic
     setTimeout(() => {
-      // In a real app, this would validate against a backend
       const storedUsers = JSON.parse(localStorage.getItem('diaryUsers') || '[]') as User[];
       const user = storedUsers.find(
         (u) => u.email === loginData.email && u.password === loginData.password
@@ -65,9 +61,7 @@ const AuthForm = () => {
       return;
     }
 
-    // Mock registration logic
     setTimeout(() => {
-      // In a real app, this would save to a backend
       const storedUsers = JSON.parse(localStorage.getItem('diaryUsers') || '[]') as User[];
       
       if (storedUsers.some(user => user.email === registerData.email)) {
@@ -95,10 +89,7 @@ const AuthForm = () => {
     <div className="flex justify-center items-center min-h-[80vh] animate-fade-in">
       <Card className="w-full max-w-md shadow-xl diary-cover border-2">
         <CardHeader className="space-y-2 text-center">
-          <CardTitle className="text-3xl font-bold text-diary-700">Mi Diario Secreto</CardTitle>
-          <CardDescription className="text-diary-600">
-            Tu espacio personal para guardar tus pensamientos
-          </CardDescription>
+          <CardTitle className="text-3xl font-bold text-diary-700">Secret Diary</CardTitle>
         </CardHeader>
         
         <Tabs defaultValue="login" className="w-full">

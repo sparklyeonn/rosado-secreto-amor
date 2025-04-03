@@ -8,7 +8,7 @@ const LoginPage = () => {
         <AuthForm />
       </main>
       <footer className="py-4 text-center text-diary-400 text-sm">
-        <p>Mi Diario Secreto &copy; {new Date().getFullYear()}</p>
+        <p>Secret Diary &copy; {new Date().getFullYear()}</p>
       </footer>
     </div>
   );
