@@ -52,7 +52,5 @@ _Añade imágenes del diseño para mostrar cómo luce._
 ## 🤝 Contribuciones
 
 ¡Contribuciones son bienvenidas! Si tienes ideas para mejorar el diario, abre un issue o haz un pull request.
+Yo siempre estaré contenta de recibir consejos para mejorar c:
 
-## 📄 Licencia
-
-Este proyecto está bajo la licencia MIT. Puedes usarlo libremente, pero dame créditos si te basas en él ❤️.
