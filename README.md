@@ -38,15 +38,11 @@
    npm start
    ```
 
-## 📸 Capturas de pantalla
-
-_Añade imágenes del diseño para mostrar cómo luce._
-
 ## 📦 Próximas mejoras
 
 - Funcionalidad de búsqueda entre entradas.
 - Encriptación de texto con contraseña personalizada.
-- Exportar diario en PDF o Markdown.
+- Exportar diario en PDF y Word.
 - Notas con audio o imágenes.
 
 ## 🤝 Contribuciones
