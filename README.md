@@ -15,12 +15,6 @@
 - Modo oscuro para escribir de noche 🌙.
 - Opcional: encriptación de entradas.
 
-## 🛠️ Tecnologías utilizadas
-
-- **Frontend**: HTML, CSS, JavaScript / React 
-- **Backend**: Node.js, Express / Django / (lo que uses)
-- **Autenticación**: JWT / OAuth / etc.
-
 ## 🚀 Instalación local
 
 1. Clona el repositorio:
